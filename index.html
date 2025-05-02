@@ -1,7 +1,247 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<style>
+  {
+    box-sizing: border-box;
+  }
+
+  body {
+    border: 5px solid black;
+    /* Add a black border around the entire website */
+    padding: 10px;
+    /* Optional: Add space between content and border */
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .column {
+    flex: 50%;
+    padding: 10px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+</style>
+<h3> Random Adress W 123rd St 92304</h3>
+<h1><em>MENU ORDER</em></h1>
+<div class="row">
+  <div class="column">
+    <h2>APPETIZERS</h2>
+    <ul>
+      <li>
+        <input id="CW" type="checkbox" name="App" value="11.99"> <label for="CW">Chicken Wings 8 pc ($11.99)</label>
+        <h4>Flavor Choices</h4>
+        <label><input id="Buffalo" type="radio" name="Buffalo-Lemon Pepper-Cajun-BBQ-Garlic Parmesan" value="Buffalo">Buffalo</label>
+        <label><input id="Lemon Pepper" type="radio" name="Buffalo-Lemon Pepper-Cajun-BBQ-Garlic Parmesan" value="Lemon Pepper">Lemon Pepper</label>
+        <label><input id="Cajun" type="radio" name="Buffalo-Lemon Pepper-Cajun-BBQ-Garlic Parmesan" value="Cajun">Cajun</label>
+        <label><input id="BBQ" type="radio" name="Buffalo-Lemon Pepper-Cajun-BBQ-Garlic Parmesan" value="BBQ">BBQ</label>
+        <label><input id="Garlic Parmesan" type="radio" name="Buffalo-Lemon Pepper-Cajun-BBQ-Garlic Parmesan" value="Garlic Parmesan">Garlic Parmesan</label>
+      </li>
+      <figure>
+        <img src="https://sundaysuppermovement.com/wp-content/uploads/2023/05/crock-pot-chicken-wings-hero.jpg" alt="wings" width="90" height="80">
+      </figure>
+      <li>
+        <input id="TT" type="checkbox" name="App" value="7.99"> <label for="TT">Tater Tots ($7.99)</label>
+      </li>
+      <figure>
+        <img src="https://showmetheyummy.com/wp-content/uploads/2021/02/Air-Fryer-Tater-Tots-Show-Me-the-Yummy-Google-Thumb-Retina-2-1024x568.jpg" alt="tots" width="120" height="80">
+      </figure>
+      <li>
+        <input id="V" type="checkbox" name="App" value="V"> <label for="V">Veggies ($4.99)</label>
+      </li>
+      <figure>
+        <img src="https://uglyducklingbakery.com/wp-content/uploads/2024/05/IMG_9614-scaled.jpg" alt="veg" width="80" height="80">
+      </figure>
+      <li>
+        <input id="MS" type="checkbox" name="App" value="MS"> <label for="MS">Mozzarella Sticks ($10.99)</label>
+      </li>
+      <figure>
+        <img src="https://sugarspunrun.com/wp-content/uploads/2021/07/Homemade-Mozzarella-Sticks-Recipe-1-of-5.jpg" alt="moz" width="80" height="80">
+      </figure>
+      <li>
+        <input id="CD" type="checkbox" name="App" value="CD"> <label for="CD">Chips n` Dip ($9.99)</label>
+      </li>
+      <figure>
+        <img src="https://www.airculinaireworldwide.com/wp-content/uploads/2017/03/Mexican-nacho-chips-and-salsa.jpg" alt="dip" width="100" height="80">
+      </figure>
+      <li>
+        <input id="P" type="checkbox" name="App" value="P"> <label for="P">Pigs in a Blanket ($12.99)</label>
+      </li>
+      <figure>
+        <img src="https://assets.bonappetit.com/photos/635062e822713176fa1bfced/1:1/w_4098,h_4098,c_limit/1019-pigs-in-a-blanket-lede.jpg" alt="pig" width="100" height="80">
+      </figure>
+      <li>
+        <input id="FC" type="checkbox" name="App" value="FC"> <label for="FC">Fried Calamari ($13.99)</label>
+      </li>
+      <figure>
+        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1024,h_1024/https://basilandbubbly.com/wp-content/uploads/2021/04/fried-calamari-6-1024x1024.jpg" alt="cal" width="80" height="80">
+      </figure>
+
+    </ul>
+    <h2>MAIN COURSE</h2>
+    <p><em>*Each entree comes with one side of your choice. Some may cost extra*</em></p>
+    <h3>PASTAS</h3>
+    <ul>
+      <li>
+        <input id="CA" type="checkbox" name="Pasta" value="CA"> <label for="CA">Chicken Alfredo ($19.79)</label>
+      </li>
+      <figure>
+        <img src="https://borrowedbites.com/wp-content/uploads/2024/01/Square-One-Pot-Chicken-Alfredo-500x500.jpg" alt="alfredo" width="80" height="80">
+      </figure>
+      <li>
+        <input id="PB" type="checkbox" name="Pasta" value="PB"> <label for="PB">Pasta Bolognese ($22.95)</label>
+      </li>
+      <figure>
+        <img src="https://assets.bonappetit.com/photos/5c2f8fe26558e92c8a622671/master/pass/bolognese-1.jpg" alt="bolo" width="120" height="80">
+      </figure>
+      <li>
+        <input id="R" type="checkbox" name="Pasta" value="R"> <label for="R">Ravioli ($17.50)</label>
+      </li>
+      <figure>
+        <img src="https://allourway.com/wp-content/uploads/2018/03/Homemade-ravioli-with-meat-and-cheese-in-bowl.jpeg-1200-x-1200.jpg" alt="ravioli" width="80" height="80">
+      </figure>
+      <li>
+        <input id="PP" type="checkbox" name="Pasta" value="PP"> <label for="PP">Pesto Pasta ($20.65)</label>
+      </li>
+      <figure>
+        <img src="https://feelgoodfoodie.net/wp-content/uploads/2024/05/Shrimp-Pesto-Pasta-12.jpg" alt="pesto" width="80" height="80">
+      </figure>
+      <li>
+        <input id="SM" type="checkbox" name="Pasta" value="SM"> <label for="SM">Spaghetti and Meatballs ($15.99)</label>
+      </li>
+      <figure>
+        <img src="https://static01.nyt.com/images/2017/04/05/dining/05COOKING-NIGMEATBALLS2/05COOKING-NIGMEATBALLS2-superJumbo.jpg" alt="spag" width="120" height="80">
+      </figure>
+    </ul>
+    <h2>SIDES</h2>
+    <ul>
+      <li>
+        <input id="A" type="checkbox" name="Side" value="A"> <label for="A">Asperagus</label>
+      </li>
+      <li>
+        <input id="C" type="checkbox" name="Side" value="C"> <label for="C">Crinkle Cut Fries</label>
+      </li>
+      <li>
+        <input id="MP" type="checkbox" name="Side" value="MP"> <label for="MP">Mash Potatoes</label>
+      </li>
+      <li>
+        <input id="B" type="checkbox" name="Side" value="B"> <label for="B">Bacon Wrapped Brussel Sprouts</label>
+      </li>
+      <li>
+        <input id="B" type="checkbox" name="Side" value="B"> <label for="B">Brocolini</label>
+      </li>
+      <li>
+        <input id="F" type="checkbox" name="Side" value="F"> <label for="F">Fruits</label>
+      </li>
+      <li>
+        <input id="SS" type="checkbox" name="Side" value="SS"> <label for="SS">Side Salad</label>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2>DRINKS</h2>
+    <p><em>*Free refills on certain drinks w/*~</em></p>
+    <ul>
+      <h3>Fresh Juice ($1.99)</h3>
+      <li>
+        <input id="O" type="checkbox" name="Juice" value="O"> <label for="O">Orange ~</label>
+      </li>
+      <li>
+        <input id="A" type="checkbox" name="Juice" value="A"> <label for="A">Apple ~</label>
+      </li>
+      <li>
+        <input id="L" type="checkbox" name="Juice" value="L"> <label for="L">Lemonade ~</label>
+      </li>
+      <li>
+        <input id="M" type="checkbox" name="soda" value="M"> <label for="M">Mango</label>
+      </li>
+      <h3>Soft Drinks ($2.99)</h3>
+      <li>
+        <input id="C" type="checkbox" name="soda" value="C"> <label for="C">Coke ~</label>
+      </li>
+      <li>
+        <input id="S" type="checkbox" name="soda" value="S"> <label for="S">Sprite ~</label>
+      </li>
+      <li>
+        <input id="F" type="checkbox" name="soda" value="F"> <label for="F">Fanta ~</label>
+      </li>
+      <li>
+        <input id="RB" type="checkbox" name="soda" value="RB"> <label for="RB">Root Beer ~</label>
+      </li>
+      <li>
+        <input id="DP" type="checkbox" name="soda" value="DP"> <label for="DP">Dr.Pepper ~</label>
+      </li>
+      <li>
+        <input id="P" type="checkbox" name="soda" value="P"> <label for="P">Pepsi ~</label>
+      </li>
+    </ul>
+    <h2>SALAD</h2>
+    <ul>
+      <li>
+        <input id="CS" type="checkbox" name="food" value="CS"> <label for="CS">Caesar Salad ($10.65)</label>
+      </li>
+      <figure>
+        <img src="https://www.allrecipes.com/thmb/mXZ0Tulwn3x9_YB_ZbkiTveDYFE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/229063-Classic-Restaurant-Caesar-Salad-ddmfs-4x3-231-89bafa5e54dd4a8c933cf2a5f9f12a6f.jpg" alt="caesar" width="100" height="80">
+      </figure>
+      <li>
+        <input id="HS" type="checkbox" name="food" value="HS"> <label for="HS">House ($9.75)</label>
+      </li>
+      <figure>
+        <img src="https://debsdailydish.com/wp-content/uploads/2023/06/House-Salad-F12-1.jpg" alt="house" width="90" height="80">
+      </figure>
+      <li>
+        <input id="CC" type="checkbox" name="food" value="CC"> <label for="CC">Chinese Chicken ($13.55)</label>
+      </li>
+      <figure>
+        <img src="https://healthyrecipesblogs.com/wp-content/uploads/2022/05/chinese-chicken-salad-featured-2022.jpg" alt="china" width="90" height="80">
+      </figure>
+      <li>
+        <input id="FS" type="checkbox" name="food" value="FS"> <label for="FS">Fruit Salad ($8.50)</label>
+      </li>
+      <figure>
+        <img src="https://images.themodernproper.com/billowy-turkey/production/posts/2022/FruitSalad_Shot4_20.jpg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1654019861&s=abb0af9baa0039bf1e91942aa34af247" alt="fruit" width="85" height="80">
+      </figure>
+      <li>
+        <input id="MC" type="checkbox" name="food" value="MC"> <label for="MC">Macaroni Salad ($11.55)</label>
+      </li>
+      <figure>
+        <img src="https://www.lanascooking.com/wp-content/uploads/2022/09/macaroni-salad-1200-feature-500x500.jpg" alt="macaroni" width="80" height="80">
+      </figure>
+    </ul>
+    <h3>STEAKS AND CUTS</h3>
+    <ul>
+      <li>
+        <input id="NYS" type="checkbox" name="food" value="NYS"> <label for="NYS">New York Strip 6 oz ($25.75)</label>
+      </li>
+      <figure>
+        <img src="https://www.grillseeker.com/wp-content/uploads/2021/05/How-to-Grill-the-Perfect-New-York-Strip-Steak-Feature-Image.jpg" alt="NY strip" width="80" height="80">
+      </figure>
+      <li>
+        <input id="TB" type="checkbox" name="food" value="TB"> <label for="TB">T-Bone Steak 1.85 lbs ($30)</label>
+      </li>
+      <figure>
+        <img src="https://thegourmetbonvivant.com/wp-content/uploads/2022/04/t-bone-steak-grill-1200x1200-1.jpg" alt="tbone" width="80" height="80">
+      </figure>
+      <li>
+        <input id="A5" type="checkbox" name="food" value="A5"> <label for="A5">A5 Wagyu 10 oz ($84.55)</label>
+      </li>
+      <figure>
+        <img src="https://wagyushop.com/cdn/shop/articles/a5-japanese-wagyu-roast-platter_1024x1024.jpg?v=1668418238" alt="wagyu" width="120" height="80">
+      </figure>
+      <li>
+        <input id="SS" type="checkbox" name="food" value="SS"> <label for="SS">Sirloin Skirt 8 oz ($20.65)</label>
+      </li>
+      <figure>
+        <img src="https://thebigmansworld.com/wp-content/uploads/2023/07/sirloin-steak-recipe-500x500.jpg" alt="sirloin" width="80" height="80">
+      </figure>
+      <li>
+        <input id="LC" type="checkbox" name="food" value="LC"> <label for="LC">Lamb Chops 16 oz ($27.95)</label>
+      </li>
+      <figure>
+        <img src="https://www.allrecipes.com/thmb/xYg20slzWq6UFDBjsTxrK7uMfkA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/74037-lamb-chops-with-balsamic-reduction-DDMFS-step-2x1-159-3ee57cce040f406e8ba602b0cb41a0f4.jpg" alt="sirloin" width="120" height="80">
+      </figure>
+    </ul>
+  </div>
+</div>
+<a href="https://codepen.io/Matthew-Mejia/pen/YPKWJKK" target="_blank">Continue</a>
