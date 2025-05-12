@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let nextDirection = null;
     let gameInterval;
     let score = 0;
-    let gameSpeed = 150; // milliseconds between updates
+    let gameSpeed = 200; // milliseconds between updates
     
     // Initialize the game
     function initGame() {
