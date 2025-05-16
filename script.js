@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         score = 0;
         scoreElement.textContent = score;
     }
+  
     
     // Generate food at random position
     function generateFood() {
@@ -44,25 +45,50 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Draw the game state
-    function draw() {
-        // Clear the canvas
-        ctx.fillStyle = '#ecf0f1';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+   // Add this at the beginning of your draw() function, after clearing the canvas
+function draw() {
+    // Clear the canvas
+    ctx.fillStyle = '#ecf0f1';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    // Draw grid lines (add this code)
+    ctx.strokeStyle = '#81868a';  // Light gray color for grid
+    ctx.lineWidth = 0.5;
+    
+    // Vertical lines
+    for (let x = 0; x <= canvas.width; x += box) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, canvas.height);
+        ctx.stroke();
+    }
+    
+    // Horizontal lines
+    for (let y = 0; y <= canvas.height; y += box) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(canvas.width, y);
+        ctx.stroke();
+    }
+    
+    // Rest of your existing draw code...
+    // Draw snake, food, etc.
+
         
         // Draw snake
         for (let segment of snake) {
-            ctx.fillStyle = '#b03535';
+            ctx.fillStyle = '#5a1d8c';
             ctx.fillRect(segment.x, segment.y, box, box);
             ctx.strokeStyle = '#ecf0f1';
             ctx.strokeRect(segment.x, segment.y, box, box);
         }
         
         // Draw head differently
-        ctx.fillStyle = '#e74c3c';
+        ctx.fillStyle = '#8d3bd1';
         ctx.fillRect(snake[0].x, snake[0].y, box, box);
         
         // Draw food
-        ctx.fillStyle = '#27ae60';
+        ctx.fillStyle = '#c21919';
         ctx.fillRect(food.x, food.y, box, box);
     }
     
@@ -109,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Increase speed slightly every 5 points
             if (score % 5 === 0 && gameSpeed > 50) {
-                gameSpeed -= 10;
+                gameSpeed -= 0;
                 clearInterval(gameInterval);
                 gameInterval = setInterval(gameLoop, gameSpeed);
             }
